@@ -13,16 +13,18 @@ COPY . .
 WORKDIR "/src/."
 RUN dotnet build "SearchWebApi.csproj" -c Release -o /app/build
 
-FROM node:8.9.4 as clientBuild
-WORKDIR /ClientApp
-COPY src/ClientApp/ .
-RUN npm install
-RUN npm run build
-
 FROM build AS publish
 RUN dotnet publish "SearchWebApi.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
+
+FROM node:8.9.4 as clientBuild
+WORKDIR /ClientApp
+COPY src/ClientApp/ .
+RUN npm install
+RUN npm run build
+WORKDIR /app
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "SearchWebApi.dll"]
