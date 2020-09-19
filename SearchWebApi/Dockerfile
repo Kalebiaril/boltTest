@@ -15,7 +15,7 @@ RUN dotnet build "SearchWebApi.csproj" -c Release -o /app/build
 
 FROM node:8.9.4 as clientBuild
 WORKDIR /ClientApp
-COPY src/SearchWebApi/ClientApp/ .
+COPY src/ClientApp/ .
 RUN npm install
 RUN npm run build
 
