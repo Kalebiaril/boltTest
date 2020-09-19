@@ -18,5 +18,9 @@ RUN dotnet publish "SearchWebApi.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
+RUN apt-get update
+RUN apt-get -y install curl gnupg
+RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
+RUN apt-get -y install nodejs
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "SearchWebApi.dll"]
