@@ -13,14 +13,16 @@ COPY . .
 WORKDIR "/src/."
 RUN dotnet build "SearchWebApi.csproj" -c Release -o /app/build
 
+FROM node:8.9.4 as clientBuild
+WORKDIR /ClientApp
+COPY src/SearchWebApi/ClientApp/ .
+RUN npm install
+RUN npm run build
+
 FROM build AS publish
 RUN dotnet publish "SearchWebApi.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-RUN apt-get update
-RUN apt-get -y install curl gnupg
-RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
-RUN apt-get -y install nodejs
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "SearchWebApi.dll"]
