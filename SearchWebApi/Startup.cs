@@ -11,6 +11,7 @@ using SearchWebApi.DB;
 using SearchWebApi.Interfaces;
 using SearchWebApi.Middleware;
 using SearchWebApi.Providers;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 namespace SearchWebApi
@@ -55,7 +56,8 @@ namespace SearchWebApi
                 app.UseDeveloperExceptionPage();
             }
             app.UseHttpsRedirection();
-
+            //app.UseSwaggerUi3();
+            //app.UseReDoc();// serve Swagger UI
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

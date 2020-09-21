@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SearchWebApi",
+    "\\SearchWebApi.Tests",
+    "\\SearchWebApi\\ClientApp",
+    "\\SearchWebApi\\ClientApp\\src",
+    "\\SearchWebApi\\ClientApp\\src\\components"
+  ],
+  "SelectedNode": "\\SearchWebApi\\SearchWebApi.csproj",
+  "PreviewInSolutionExplorer": false
+}

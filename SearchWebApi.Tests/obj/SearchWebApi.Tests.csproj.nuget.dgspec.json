@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\galina\\source\\repos\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj": {}
+    "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\galina\\source\\repos\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj": {
+    "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\galina\\source\\repos\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj",
         "projectName": "SearchWebApi.Tests",
-        "projectPath": "C:\\Users\\galina\\source\\repos\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj",
+        "projectPath": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi.Tests\\SearchWebApi.Tests.csproj",
         "packagesPath": "C:\\Users\\galina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\galina\\source\\repos\\SearchWebApi.Tests\\obj\\",
+        "outputPath": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\galina\\source\\repos\\SearchWebApi\\SearchWebApi.csproj": {
-                "projectPath": "C:\\Users\\galina\\source\\repos\\SearchWebApi\\SearchWebApi.csproj"
+              "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi\\SearchWebApi.csproj": {
+                "projectPath": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi\\SearchWebApi.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\galina\\source\\repos\\SearchWebApi\\SearchWebApi.csproj": {
+    "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi\\SearchWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\galina\\source\\repos\\SearchWebApi\\SearchWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi\\SearchWebApi.csproj",
         "projectName": "SearchWebApi",
-        "projectPath": "C:\\Users\\galina\\source\\repos\\SearchWebApi\\SearchWebApi.csproj",
+        "projectPath": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi\\SearchWebApi.csproj",
         "packagesPath": "C:\\Users\\galina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\galina\\source\\repos\\SearchWebApi\\obj\\",
+        "outputPath": "C:\\Users\\galina\\source\\repos\\allstarsIt\\SearchWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -143,10 +143,6 @@
               "target": "Package",
               "version": "[3.1.7, )"
             },
-            "Microsoft.Azure.CognitiveServices.Search.EntitySearch": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -162,6 +158,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.9, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.7.4, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
